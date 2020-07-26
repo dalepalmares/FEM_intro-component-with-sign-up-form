@@ -49,7 +49,7 @@
 
 @media (max-width: 375px) {
   #bg-image {
-    background-image: url(/dist/images/bg-intro-mobile.png);
+    background-image: url("/dist/images/bg-intro-mobile.png");
   }
 }
 @media (min-width: 1024px) {
