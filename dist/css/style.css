@@ -8546,7 +8546,7 @@ video {
 }
 
 #bg-image {
-  background-image: url(/dist/images/bg-intro-desktop.png);
+  background-image: url("../images/bg-intro-desktop.png");
 }
 
 #paragraph {
@@ -8609,7 +8609,7 @@ video {
 
 @media (max-width: 375px) {
   #bg-image {
-    background-image: url(/dist/images/bg-intro-mobile.png);
+    background-image: url("../images/bg-intro-mobile.png");
   }
 }
 
