@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body class="relative lg:h-screen font-poppins lg:overflow-hidden">
+    <div class="absolute inset-0 bg-primary-red" id="bg-image"></div>
+
+    <div class="flex justify-center h-full">
+      <div
+        class="relative flex flex-col items-center justify-center h-full max-w-lg px-6 pt-20 lg:pt-0 lg:flex-row lg:max-w-5xl"
+      >
+        <div class="max-w-sm text-center lg:text-left lg:max-w-md">
+          <h1
+            class="text-3xl font-bold leading-9 text-white lg:text-4xl lg:pr-10"
+          >
+            Learn to code by watching others
+          </h1>
+          <p class="mt-5 font-medium text-white lg:pr-10" id="paragraph">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <div class="mt-16 lg:max-w-6xl">
+          <div class="px-16 py-5 rounded-lg bg-accent-blue drop-shadow">
+            <p class="text-center text-white">
+              <span class="font-bold">Try it free 7 days</span> then $20/mo.
+              thereafter
+            </p>
+          </div>
+
+          <div class="p-5 mt-6 mb-12 bg-white rounded-lg lg:p-10 drop-shadow">
+            <form action="">
+              <div class="relative flex items-center mb-4">
+                <input
+                  type="name"
+                  placeholder="First Name"
+                  class="w-full p-3 text-sm font-semibold tracking-wide border rounded-md outline-none lg:px-6 lg:py-4 input"
+                  id="first-name"
+                  aria-label="name"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error icon"
+                  class="absolute right-0 mr-3 error-icon lg:mr-6"
+                />
+              </div>
+              <p class="relative italic font-medium error-msg text-primary-red">
+                First Name cannot be empty
+              </p>
+
+              <div class="relative flex items-center mb-4">
+                <input
+                  type="name"
+                  placeholder="Last Name"
+                  class="w-full p-3 text-sm font-semibold tracking-wide border rounded-md outline-none lg:px-6 lg:py-4 input"
+                  id="last-name"
+                  aria-label="name"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error icon"
+                  class="absolute right-0 mr-3 error-icon lg:mr-6"
+                />
+              </div>
+              <p class="relative italic font-medium error-msg text-primary-red">
+                Last Name cannot be empty
+              </p>
+
+              <div class="relative flex items-center mb-4">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full p-3 text-sm font-semibold tracking-wide border rounded-md outline-none lg:px-6 lg:py-4 input"
+                  id="email"
+                  aria-label="email"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error icon"
+                  class="absolute right-0 mr-3 error-icon lg:mr-6"
+                />
+              </div>
+              <p class="relative italic font-medium error-msg text-primary-red">
+                Looks like this is not an email
+              </p>
+
+              <div class="relative flex items-center mb-4">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="w-full p-3 text-sm font-semibold tracking-wide border rounded-md outline-none lg:px-6 lg:py-4 input"
+                  id="password"
+                  aria-label="password"
+                  autocomplete="on"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt="error icon"
+                  class="absolute right-0 mr-3 error-icon lg:mr-6"
+                />
+              </div>
+              <p class="relative italic font-medium error-msg text-primary-red">
+                Password cannot be empty
+              </p>
+            </form>
+
+            <button
+              class="w-full p-4 mb-4 font-semibold tracking-wider text-white uppercase transition-all duration-75 ease-linear rounded-md focus:outline-none bg-primary-green"
+              id="cta-btn"
+              onclick="check()"
+            >
+              Claim your free trial
+            </button>
+            <p class="px-3 text-xs text-center text-neutral-grayishBlue">
+              By clicking the button, you are agreeing to our
+              <span class="font-bold cursor-pointer text-primary-red"
+                >Terms and Services</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="relative bottom-0 w-full lg:absolute">
+      <p class="text-xs text-center attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-link"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://twitter.com/daley_tweet"
+          class="text-link"
+          target="_blank"
+          >Dale Palmares</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

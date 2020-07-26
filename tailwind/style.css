@@ -1,0 +1,60 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+#bg-image {
+  background-image: url(/dist/images/bg-intro-desktop.png);
+}
+#paragraph {
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #797979;
+}
+.input {
+  color: #333;
+  border-color: #cecece;
+}
+.input:focus {
+  border-color: rgb(39, 39, 39);
+}
+.error-icon {
+  display: none;
+}
+.error-msg {
+  text-align: right;
+  top: -0.7rem;
+  font-size: 11px;
+  margin-bottom: 0.4rem;
+  display: none;
+}
+
+.drop-shadow {
+  box-shadow: 0 8px 0 0px rgba(0, 0, 0, 0.1);
+}
+
+#cta-btn {
+  box-shadow: 0 4px 0 0px rgb(43, 174, 117);
+}
+#cta-btn:hover {
+  background-color: hsl(154, 58%, 45%);
+}
+#cta-btn:active {
+  background-color: hsla(154, 67%, 56%, 0.7);
+  box-shadow: 0 4px 0 0px rgb(50, 202, 136);
+}
+
+@media (max-width: 375px) {
+  #bg-image {
+    background-image: url(/dist/images/bg-intro-mobile.png);
+  }
+}
+@media (min-width: 1024px) {
+  #paragraph {
+    font-size: 13px;
+    width: 29rem;
+  }
+}

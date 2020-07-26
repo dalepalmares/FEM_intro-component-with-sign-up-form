@@ -1,0 +1,13 @@
+{
+  "name": "intro_component_with_signup_form",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss tailwind/style.css -o dist/css/style.css",
+    "watch": "postcss tailwind/style.css -o dist/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
